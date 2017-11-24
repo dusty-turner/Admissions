@@ -1,9 +1,10 @@
 if("tigris" %in% rownames(installed.packages()) == FALSE) {install.packages("tigris")}
 if("leaflet" %in% rownames(installed.packages()) == FALSE) {install.packages("leaflet")}
+if("tidyverse" %in% rownames(installed.packages()) == FALSE) {install.packages("tidyverse")}
 library(tigris)
 library(leaflet)
 library(tidyverse)
-
+# shiny::runGitHub("Admissions", "dusty-turner")
 
 ## Download Congressional District Shape Files
 cd114500kt <- congressional_districts(cb = TRUE, resolution = '500k', year = 2015)
