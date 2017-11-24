@@ -1,3 +1,5 @@
+if("tigris" %in% rownames(installed.packages()) == FALSE) {install.packages("tigris")}
+if("leaflet" %in% rownames(installed.packages()) == FALSE) {install.packages("leaflet")}
 library(tigris)
 library(leaflet)
 library(tidyverse)
